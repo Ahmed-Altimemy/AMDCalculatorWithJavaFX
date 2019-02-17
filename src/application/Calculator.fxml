@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="553.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CalculatorControler">
+   <children>
+      <AnchorPane cache="true" depthTest="DISABLE" layoutX="-8.0" layoutY="-8.0" pickOnBounds="false" prefHeight="580.0" prefWidth="611.0">
+         <children>
+            <TextField fx:id="txtView" alignment="CENTER_RIGHT" editable="false" layoutX="12.0" layoutY="112.0" prefHeight="40.0" prefWidth="308.0">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor></TextField>
+            <TextField fx:id="txtWrite" alignment="CENTER_RIGHT" editable="false" layoutX="12.0" layoutY="157.0" prefHeight="40.0" prefWidth="308.0">
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor></TextField>
+            <Button fx:id="btnDivision" layoutX="240.0" layoutY="220.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="/" />
+            <Button fx:id="btnC" layoutX="171.0" layoutY="401.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="40.0" prefWidth="147.0" text="C" />
+            <Button fx:id="btnCE" layoutX="13.0" layoutY="401.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="40.0" prefWidth="147.0" text="CE" />
+            <Button fx:id="btnMultiplication" layoutX="240.0" layoutY="262.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="*" />
+            <Button fx:id="btn9" layoutX="164.0" layoutY="220.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="9" />
+            <Button fx:id="btn8" layoutX="88.0" layoutY="220.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="8" />
+            <Button fx:id="btn7" layoutX="12.0" layoutY="220.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="7" />
+            <Button fx:id="btnSubtraction" layoutX="240.0" layoutY="346.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="-" />
+            <Button fx:id="btn6" layoutX="164.0" layoutY="262.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="6" />
+            <Button fx:id="btn5" layoutX="88.0" layoutY="262.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="5" />
+            <Button fx:id="btn4" layoutX="12.0" layoutY="262.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="4" />
+            <Button fx:id="btnAddition" layoutX="240.0" layoutY="304.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="+" />
+            <Button fx:id="btn3" layoutX="164.0" layoutY="304.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="3" />
+            <Button fx:id="btn2" layoutX="88.0" layoutY="304.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="2" />
+            <Button fx:id="btn1" layoutX="12.0" layoutY="304.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="1" />
+            <Button fx:id="btnEqual" layoutX="164.0" layoutY="346.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="40.0" prefWidth="75.0" text="=" />
+            <Button fx:id="btnDot" layoutX="88.0" layoutY="346.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="34.0" prefWidth="75.0" text="." />
+            <Button fx:id="btn0" layoutX="12.0" layoutY="346.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="40.0" prefWidth="75.0" text="0" />
+            <Label fx:id="lblMemory" alignment="TOP_CENTER" layoutX="325.0" layoutY="155.0" opacity="0.5" prefHeight="360.0" prefWidth="291.0" wrapText="true" />
+            <Label fx:id="lblHistory" layoutX="372.0" layoutY="115.0" prefHeight="40.0" prefWidth="106.0" text="History" visible="false" />
+            <Button fx:id="btnClearHistory" layoutX="12.0" layoutY="446.0" mnemonicParsing="false" onAction="#getButtonID" prefHeight="40.0" prefWidth="308.0" text="Clear History" />
+            <Label fx:id="lblTitle" alignment="CENTER" layoutX="14.0" layoutY="31.0" prefHeight="63.0" prefWidth="493.0" text="AMD (( Calculator ))   With Long Expression" wrapText="true" />
+            <ImageView fitHeight="104.0" fitWidth="115.0" layoutX="507.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/calc.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
